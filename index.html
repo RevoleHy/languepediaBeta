@@ -10,10 +10,13 @@
     }
     h1 {
       color:#5B92E4;
-      text-align: center;}
+      text-align: center;
+      border-bottom: 2px solid #504e48;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
     a {
       text-decoration: none;
-      color: #81D8CF;
       font-weight: bold;
     }
     #languepedia {
@@ -23,32 +26,55 @@
       font-size: 40pt;
       font-weight: bold;
     }
+    #grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+    #text{
+      padding-left: 25px;
+      border-left: 2px solid #504e48;
+    }
+    #list ul {
+      width: 220px;
+      margin: 0;
+      padding-top: 20px;
+    }
+    .libyli {
+      background: linear-gradient(to right, #FC80A5, #558BCF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   </style>
 </head>
 <body>
   <h1><a href="index.html" id="languepedia">Languepedia</a></h1>
   <h1>WECOME TO LANGUEPEDIA <br> BIENVENUE À LANGUEPEDIA <br> LANGUEPEDIA에 오신걸 환영합니다 </h1>
-  <ul>
-    <li><a href="02KR.html" style="color:#558BCF">한국어</a></li>
-    <li><a href="03JA.html" style="color:#DE7C68">にほんご</a></li>
-    <li><a href="01FR.html" style="color:#0055A4">le français</a></li>
-    <li><a href="04RU.html" style="color:#FC80A5">Русский</a></li>
-    <li><a href="05ZH.html" style="color:#99001C">漢語(준비중/NOT Ready)</a></li>
-  </ul>
-  <h2>Languepedia? 도대체 뭐하는 거죠? (KR)</h2>
-  <p>Languepedia는 RevoleHy라는 이름의 한 친구가 만들고 있는 언어사전이예요-!^^. 모든 언어에 대한 정보를 정리하는 것이 저희의 목표랍니다-★<br>[ ]안은 발음, ( )안은 뜻 이예요. 발음은 정확하지 않을 수 있으니 다른 자료들을 참고해 주세요-★</p>
-  <h2>What is Languepedia? (EN)</h2>
-  <p>Languepedia is a dictionarry about langues in whole worlds which is made by RevoleHy. We are going to make documents about all langues.</p>
-  <h2>RevoleHy</h2>
-  <p>Bonjour, everyone! I want to communicate with whole people in this world in their langages. It would be very difficult and hard challange. Will you go with ME?</p>
-  <br>
-  <h1 style="color:#AE1932">여기 아래는 아직 준비가 덜 됬어요 <br> Under here is NOT ready.</h1>
-  <h1>LANGUEPEDIA - Others</h1>
-  <ul>
-    <li><a href="OthsMONTH.html">달(月) 표현 - Months</a></li>
-    <li><a href="OthsDAYS.html">요일(曜日) 표현 - Days</a></li>
-    <li><a href="OthsDIREC.html">방향(方向) 표현 - Directions</a></li>
-  </ul>
-
+  <div id="grid">
+    <div id="list">
+      <ul>
+        <h4>언어별 정보</h4>
+        <li><a href="02KR.html" style="color:#558BCF">한국어</a></li>
+        <li><a href="03JA.html" style="color:#DE7C68">にほんご</a></li>
+        <li><a href="01FR.html" style="color:#0055A4">le français</a></li>
+        <li><a href="04RU.html" style="color:#FC80A5">Русский</a></li>
+        <li><a href="05ZH.html" style="color:#99001C">漢語(준비중/NOT Ready)</a></li>
+      </ul>
+      <ul>
+        <h4>표현별 정보</h4>
+        <li class="libyli"><a href="OthsMONTH.html">달(月) 표현 - Months</a></li>
+        <li class="libyli"><a href="OthsDAYS.html">요일(曜日) 표현 - Days</a></li>
+        <li class="libyli"><a href="OthsDIREC.html">방향(方向) 표현 - Directions</a></li>
+      </ul>
+    </div>
+    <div id="text">
+      <h2>Languepedia? 도대체 뭐하는 거죠? (KR)</h2>
+      <p>Languepedia는 RevoleHy라는 이름의 한 친구가 만들고 있는 언어사전이예요-!^^. 모든 언어에 대한 정보를 정리하는 것이 저희의 목표랍니다-★<br>[ ]안은 발음, ( )안은 뜻 이예요. 발음은 정확하지 않을 수 있으니 다른 자료들을 참고해 주세요-★</p>
+      <h2>What is Languepedia? (EN)</h2>
+      <p>Languepedia is a dictionarry about langues in whole worlds which is made by RevoleHy. We are going to make documents about all langues.</p>
+      <h2>RevoleHy</h2>
+      <p>Bonjour, everyone! I want to communicate with whole people in this world in their langages. It would be very difficult and hard challange. Will you go with ME?</p>
+      <br>
+    </div>
+  </div>
 </body>
 </html>

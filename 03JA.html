@@ -11,7 +11,11 @@
     }
     h1 {
       color:#5B92E4;
-      text-align: center;}
+      text-align: center;
+      border-bottom: 2px solid #504e48;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
     a {
       text-decoration: none;
       color: #DE7C6B;
@@ -42,50 +46,70 @@
     .titles {
       color: white;
     }
+    #grid {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+    #text{
+      padding-left: 25px;
+      border-left: 2px solid #504e48;
+    }
+    #list {
+      width: 220px;
+      margin: 0;
+      padding-top: 20px;
+    }
   </style>
 </head>
 <body>
   <h1><a href="index.html" id="languepedia">Languepedia</a></h1>
-  <ul>
-    <li><a href="03JA.html">にほんご</a></li>
-    <li><a href="03_1JAkr.html">일본어</a></li>
-  </ul>
-  <ul>
-    <li><a href="#JA">にほんご</a></li>
-    <li id="JAcharRE"><a href="#JAchar">日本語の<ruby>文字<rp>(</rp><rt>もじ<rt><rp>)</rp></ruby></a></li>
+  <div id="grid">
+    <div id="list">
       <ul>
-      <li id="JAhiraRE"><a href="#JAhira">ひらがな</a></li>
-        <details>
-          <summary class="strong">だくおん/はんだくおん/ようおん/そくおん</summary>
-          <p><ul>
-            <li id="JAhiraTRE"><a href="#JAhiraT">だくおん</a></li>
-            <li id="JAhiraBTRE"><a href="#JAhiraBT">はんだくおん</a></li>
-            <li id="JAhiraYORE"><a href="#JAhiraYO">ようおん</a></li>
-            <li id="JAhiraTSURE"><a href="#JAhiraTSU">そくおん</a></li>
-          <ul></p>
-        </details>
-      <li id="JAkataRE"><a href="#JAkata">カタカナ</a></li>
-        <details>
-          <summary class="strong">だくおん/はんだくおん/ようおん/そくおん</summary>
-          <p><ul>
-            <li id="JAkataTRE"><a href="#JAkataT">だくおん</a></li>
-            <li id="JAkataBTRE"><a href="#JAkataBT">はんだくおん</a></li>
-            <li id="JAkataYORE"><a href="#JAkataYO">ようおん</a></li>
-            <li id="JAkataTSURE"><a href="#JAkataTSU">そくおん</a></li>
-          <ul></p>
-        </details>
-      <li id="JAkanjiRE"><a href="#JAkanji"><ruby>漢字<rp>(</rp><rt>かんじ<rt><rp>)</rp></ruby></a></li>
+        <h4>문서 언어</h4>
+        <li><a href="03JA.html">にほんご</a></li>
+        <li><a href="03_1JAkr.html">일본어</a></li>
       </ul>
-  </ul>
-  <h2 id="JA">にほんご</h2>
-  <img src="japan2.jpg" width="400px">
-  <br><small>にほんごで"<ruby>居酒屋<rp>(</rp><rt>いざかや<rt><rp>)</rp></ruby>"とかいてあります。</small>
-  <p><strong><a href="https://ja.wikipedia.org/wiki/日本語" target="_blank" title="日本語 (wikipedia)"><ruby>日本語<rp>(</rp><rt>にほんご<rt><rp>)</rp></ruby></a></strong>は<strong>日本</strong>のげんごであります。<br>日本語をつかっているひとびとはやく1おく2500まんにんくらいであります。</p>
-  <!--일본어 문자체계 -->
-  <h2 id="JAchar">日本語の<ruby><rb>文字</rb><rt>もじ</rt></ruby></h2>
-  <p>日本語の文字はちょっとふくざつです。日本語はさんこの文字をつかいます。まず、おとをあらわす文字がふたつあります。ひとつは<strong>ひらがな</strong>ということ、あとは<strong>カタカナ</strong>ということです。しかし、にほんごをひらがなだけでかければ、ぶんしょうがあまりながくなりますので、それをため、<ruby><rb>漢字</rb><rt>かんじ<rt></ruby>をたくさん<ruby>使<rp>(</rp><rt>つか<rt><rp>)</rp></ruby>います。日本語の漢字は日本<ruby><rb>文部科学省</rb><rt>もんぶかがくしょう<rt></ruby>が<ruby><rb>決</rb><rt>き</rt></ruby>まった2136個の<strong><ruby><rb>常用漢字</rb><rt>じょうようかんじ</rt></ruby></strong>を<ruby><rb>中心</rb><rt>ちゅうしん</rt></ruby>に使いますが、 <ruby><rb>人名</rb><rt>じんめい</rt></ruby>または<ruby><rb>地名</rb><rt>ちめい</rt></ruby>ようなことには、たびたび常用漢字の<ruby><rb>範囲</rb><rt>はんい</rt></ruby>にない漢字も使います</p>
-    <!--히라가나 -->
-    <h3 id="JAhira"><a class="tilelinks" href="#JAhiraRE">ひらがな</a></h3>
-    <p><strong class="strong">ひらがな</strong>は日本語で何よりも基本的な文字だといえるでしょう。ひらがなは日本語の固有の言葉と助詞ようなことを書くときに使います。 ひらがなだけでも、日本語はいくぶん読めるようになりますよ。ひらがなとして使う文字は総合46字です。もう二つの文字(ゐ[wi],ゑ[we])がありますが, 現代にはよく使いません。<br>ひらがな50音図はしたの表と同じです。右から左の方向でよみます。<strong class="strong">段</strong>は母音(あ、い、う、え、お [-a -i -u -e -o])を表す、<strong class="strong">行</strong>は子音(あ、か、さ、た、な、は、ま、や、ら、わ、ん [a k- s- t- n- h- m- y- r- w- n])を表します。</p>
+      <ul>
+        <li><a href="#JA">にほんご</a></li>
+        <li id="JAcharRE"><a href="#JAchar">日本語の<ruby>文字<rp>(</rp><rt>もじ<rt><rp>)</rp></ruby></a></li>
+          <ul>
+          <li id="JAhiraRE"><a href="#JAhira">ひらがな</a></li>
+            <details>
+              <summary class="strong">だくおん/はんだくおん/ようおん/そくおん</summary>
+              <p><ul>
+                <li id="JAhiraTRE"><a href="#JAhiraT">だくおん</a></li>
+                <li id="JAhiraBTRE"><a href="#JAhiraBT">はんだくおん</a></li>
+                <li id="JAhiraYORE"><a href="#JAhiraYO">ようおん</a></li>
+                <li id="JAhiraTSURE"><a href="#JAhiraTSU">そくおん</a></li>
+              </ul></p>
+            </details>
+          <li id="JAkataRE"><a href="#JAkata">カタカナ</a></li>
+            <details>
+              <summary class="strong">だくおん/はんだくおん/ようおん/そくおん</summary>
+              <p><ul>
+                <li id="JAkataTRE"><a href="#JAkataT">だくおん</a></li>
+                <li id="JAkataBTRE"><a href="#JAkataBT">はんだくおん</a></li>
+                <li id="JAkataYORE"><a href="#JAkataYO">ようおん</a></li>
+                <li id="JAkataTSURE"><a href="#JAkataTSU">そくおん</a></li>
+              </ul></p>
+            </details>
+          <li id="JAkanjiRE"><a href="#JAkanji"><ruby>漢字<rp>(</rp><rt>かんじ<rt><rp>)</rp></ruby></a></li>
+          </ul>
+      </ul>
+    </div>
+    <div id="text">
+      <h2 id="JA">にほんご</h2>
+      <img src="japan2.jpg" width="400px">
+      <br><small>にほんごで"<ruby>居酒屋<rp>(</rp><rt>いざかや<rt><rp>)</rp></ruby>"とかいてあります。</small>
+      <p><strong><a href="https://ja.wikipedia.org/wiki/日本語" target="_blank" title="日本語 (wikipedia)"><ruby>日本語<rp>(</rp><rt>にほんご<rt><rp>)</rp></ruby></a></strong>は<strong>日本</strong>のげんごであります。<br>日本語をつかっているひとびとはやく1おく2500まんにんくらいであります。</p>
+      <!--일본어 문자체계 -->
+      <h2 id="JAchar">日本語の<ruby><rb>文字</rb><rt>もじ</rt></ruby></h2>
+      <p>日本語の文字はちょっとふくざつです。日本語はさんこの文字をつかいます。まず、おとをあらわす文字がふたつあります。ひとつは<strong>ひらがな</strong>ということ、あとは<strong>カタカナ</strong>ということです。しかし、にほんごをひらがなだけでかければ、ぶんしょうがあまりながくなりますので、それをため、<ruby><rb>漢字</rb><rt>かんじ<rt></ruby>をたくさん<ruby>使<rp>(</rp><rt>つか<rt><rp>)</rp></ruby>います。日本語の漢字は日本<ruby><rb>文部科学省</rb><rt>もんぶかがくしょう<rt></ruby>が<ruby><rb>決</rb><rt>き</rt></ruby>まった2136個の<strong><ruby><rb>常用漢字</rb><rt>じょうようかんじ</rt></ruby></strong>を<ruby><rb>中心</rb><rt>ちゅうしん</rt></ruby>に使いますが、 <ruby><rb>人名</rb><rt>じんめい</rt></ruby>または<ruby><rb>地名</rb><rt>ちめい</rt></ruby>ようなことには、たびたび常用漢字の<ruby><rb>範囲</rb><rt>はんい</rt></ruby>にない漢字も使います</p>
+        <!--히라가나 -->
+        <h3 id="JAhira"><a class="tilelinks" href="#JAhiraRE">ひらがな</a></h3>
+        <p><strong class="strong">ひらがな</strong>は日本語で何よりも基本的な文字だといえるでしょう。ひらがなは日本語の固有の言葉と助詞ようなことを書くときに使います。 ひらがなだけでも、日本語はいくぶん読めるようになりますよ。ひらがなとして使う文字は総合46字です。もう二つの文字(ゐ[wi],ゑ[we])がありますが, 現代にはよく使いません。<br>ひらがな50音図はしたの表と同じです。右から左の方向でよみます。<strong class="strong">段</strong>は母音(あ、い、う、え、お [-a -i -u -e -o])を表す、<strong class="strong">行</strong>は子音(あ、か、さ、た、な、は、ま、や、ら、わ、ん [a k- s- t- n- h- m- y- r- w- n])を表します。</p>
+    </div>
+  </div>
 </body>
 </html>
