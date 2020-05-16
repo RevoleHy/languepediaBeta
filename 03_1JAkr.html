@@ -6,21 +6,25 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
     body {
-      font-family: 'Cabin', 'M PLUS 1p', sans-serif;
+      font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
+	  text-align: left;
     }
     h1 {
       color:#5B92E4;
       text-align: center;
     }
     h2 {
+	  font-family: 'Song Myung', serif;
       color: white;
       background-color: #8A3A39;
       font-size: 18pt;
     }
     a {
       text-decoration: none;
-      color: #DE7C6B;
+      color: #e86b79;
       font-weight: bold;
     }
     #languepedia {
@@ -31,15 +35,16 @@
       font-weight: bold;
     }
     .tableC {
-      background-color: #DE7C6B;
+      background-color: #e86b79;
     }
     .strong {
-      color: #DE7C6B;
+      color: #e86b79;
     }
     .tableT {
       color:white;
     }
     h3 {
+	  font-family: 'Song Myung', serif;
       font-size: 18pt;
     }
     .tilelinks {
@@ -48,6 +53,10 @@
     .titles {
       color: white;
     }
+	  small {
+		  color:#504e48;
+		  font-weight: bold;
+	  }
   </style>
 </head>
 <body>
@@ -68,7 +77,7 @@
             <li id="JAhiraBTRE"><a href="#JAhiraBT">반탁음</a></li>
             <li id="JAhiraYORE"><a href="#JAhiraYO">요음</a></li>
             <li id="JAhiraTSURE"><a href="#JAhiraTSU">촉음</a></li>
-          <ul></p>
+          </ul></p>
         </details>
       <li id="JAkataRE"><a href="#JAkata">カタカナ - 카타카나</a></li>
         <details>
@@ -78,12 +87,28 @@
             <li id="JAkataBTRE"><a href="#JAkataBT">반탁음</a></li>
             <li id="JAkataYORE"><a href="#JAkataYO">요음</a></li>
             <li id="JAkataTSURE"><a href="#JAkataTSU">촉음</a></li>
-          <ul></p>
+          </ul></p>
         </details>
       <li id="JAkanjiRE"><a href="#JAkanji"><ruby>漢字<rp>(</rp><rt>かんじ<rt><rp>)</rp></ruby> - 한자</a></li>
       </ul>
+	<li id="JAgranRE"><a href="#JAgran">일본어의 기본문법</a></li>
+		<ul>
+          <li id="JAgranBRE"><a href="#JAgranB">~입니다/~합니다</a></li>
+		  <li id="JAgranPostpoRE"><a href="#JAgranPostpo">조사</a></li>
+          <li id="JAgranVerbRE"><a href="#JAgranVerb">일본어 동사</a></li>
+		  <details>
+          	<summary class="strong">동사 유형</summary>
+          	<p><ul>
+            	<li id="JAgranVerbNaiRE"><a href="#JAgranVerbNai">부정형</a></li>
+            	<li id="JAgranVerbMasu"><a href="#JAgranVerbMasu">ます형</a></li>
+            	<li id="JAgranVerbBRE"><a href="#JAgranVerbB">기본형</a></li>
+            	<li id="JAgranVerbETCRE"><a href="#JAgranVerbETC">기타동사형</a></li>
+          	</ul></p>
+          </details>
+          <li id="JAgranAdjeRE"><a href="#JAgranAdje">일본어 형용사</a></li>
+        </ul>
   </ul>
-  <h2 id="JA">일본어</h2>
+<h2 id="JA">일본어</h2>
   <img src="japan2.jpg" width="400px">
   <br><small>일본어로 "<ruby>居酒屋<rp>(</rp><rt>いざかや<rt><rp>)</rp></ruby>"[이자카야](선술집)이라고 적혀있습니다.</small>
   <p><strong class="strong"><a href="https://ja.wikipedia.org/wiki/日本語" target="_blank" title="日本語 (wikipedia)"><ruby>日本語<rp>(</rp><rt>にほんご<rt><rp>)</rp></ruby></a></strong>[니혼고](일본어)는<strong class="strong">일본국</strong>의 국어입니다.<br>일본어를 사용하는 인구는 약 1억 2500만명 정도로, 대부분 일본국의 국민입니다.</p>
@@ -587,9 +612,200 @@
       <h3 id="JAkataTSU"><a class="tilelinks" href="#JAkataTSURE">촉음</a></h3>
       <p>카타카나의 <strong class="strong">촉음</strong>역시 히라가나 처럼 ツ를 작게 써서 <strong class="strong">ッ</strong>처럼 씁니다. </p>
       <!--칸지 -->
-      <h3 id="JAkanji"><a class="tilelinks" href="#JAkanjiRE"><ruby>漢字<rp>(</rp><rt>かんじ<rt><rp>)</rp></ruby> - 한자</a></h3>
+      <h3 id="JAkanji"><a class="tilelinks" href="#JAkanjiRE"><ruby><rb>漢字</rb><rt>かんじ</rt></ruby> - 한자</a></h3>
       <p>일본어는 대부분의 표현을 가능하면 <strong class="strong">한자</strong>로 표기합니다. 일본어의 한자는 한국어나 중국어의 것에 비해 많이 복잡한데, 우선 일본어의 한자를 읽는 방식은 크게 두가지 입니다. 첫번째는 <strong class="strong">훈독</strong>이고, 두번째는 <strong class="strong">음독</strong>입니다. 한국어로 비유하면, 훈독은 天이라 쓰고 "하늘"이라 읽는 것입니다. 음독은 같은 한자를 "천"이라고 읽는 것입니다. 훈독으로 읽어야 할지 음독으로 읽어야 할지는 맥락에 맞추어 파악해야 합니다. 심지어 훈독과 음독 마저도 여러개인 경우가 많습니다. 하지만, 대부분의 경우는 훈독과 음독을 사용하는 때가 구분되있는 경우가 많습니다. 막연하고 어려워 보이죠? 일단, 한자들의 훈독과 음독을 익혀 보고, 각각 훈독과 음독을 사용하는 경우를 예문을 읽어 봐요. 그러면 서서히 감이 잡힐꺼예요.</p>
+	  <ul>
+		<li><a href="03_1JAkr_PlKANJI.html">일본어 상용한자 2136</a></li>
+	  </ul>
       <h4 style="color:#8A3A39">일본어 한자 맛보기</h4>
-      <p>한자에 대해 감이 아직 안잡히시죠? 간단한 예시를 통해서 맛만 봐볼까요. <br><span style="color:#DE7C6B; font-size: 16pt; font-weight: bold;"><ruby><rb>生物</rb><rt>せいぶつ</rt></ruby>/<ruby><rb>生</rb><rt>い</rt></ruby>きる</span><br>위의 두 단어에는 모두 "生"이라는 한자가 쓰였습니다. 왼쪽은 "생물"로 쓰이면서 음독인 "せい"로 읽었습니다. 하지만, 오른쪽은 "살다"라는 동사를 표현하면서 훈독인 "いきる"로 읽었습니다. 이렇게 두개 이상의 한자가 결합한 한자어는 대부분 음독으로 읽고, 일본어에 고유 명사가 있거나, 동사로.또는 형용사등으로 표현하려는 경우에는 훈독으로 읽습니다. 특히, 동사나 형용사의 경우에는 위의 "生きる"처럼 한자 밖에 히라가나가 붙는데 이를 <strong class="strong"><ruby><rb>送</rb><rt>おく</rt></ruby>り<ruby><rb>仮名</rb><rt>がな</rt></ruby></strong>(오쿠리가나)라고 합니다. 오쿠리가나는 동사나 형용사의 활용시에 변할 수 있게 밖으로 나온 부분입니다. 즉, 오쿠리가나가 있다면, 동사 혹은 형용사인 것입니다.</p>
+      <p>한자에 대해 감이 아직 안잡히시죠? 간단한 예시를 통해서 맛만 봐볼까요. <br><span style="color:#e86b79; font-size: 16pt; font-weight: bold;"><ruby><rb>生物</rb><rt>せいぶつ</rt></ruby>/<ruby><rb>生</rb><rt>い</rt></ruby>きる</span><br>위의 두 단어에는 모두 "生"이라는 한자가 쓰였습니다. 왼쪽은 "생물"로 쓰이면서 음독인 "せい"로 읽었습니다. 하지만, 오른쪽은 "살다"라는 동사를 표현하면서 훈독인 "いきる"로 읽었습니다. 이렇게 두개 이상의 한자가 결합한 한자어는 대부분 음독으로 읽고, 일본어에 고유 명사가 있거나, 동사로.또는 형용사등으로 표현하려는 경우에는 훈독으로 읽습니다. 특히, 동사나 형용사의 경우에는 위의 "生きる"처럼 한자 밖에 히라가나가 붙는데 이를 <strong class="strong"><ruby><rb>送</rb><rt>おく</rt></ruby>り<ruby><rb>仮名</rb><rt>がな</rt></ruby></strong>(오쿠리가나)라고 합니다. 오쿠리가나는 동사나 형용사의 활용시에 변할 수 있게 밖으로 나온 부분입니다. 즉, 오쿠리가나가 있다면, 동사 혹은 형용사인 것입니다.</p>
+	  <!--일본어 문법-->
+	  <h2 id="JAgran"><a href="#JAgranRE" class="titles">일본어의 기본문법</a></h2>
+		  <p>위의 문자들을 다 익히셨나요? 다 익히시지 못하셨더라도 좋아요. 우선 <a href="#JAhira"><strong class="strong">히라가나</strong></a>만이라고 익혀두세요. 히라가나만 가능하다면, 모든 한자나 카타카나 위에 <strong class="strong"><ruby><rb>読</rb><rt>よ</rt></ruby>み<ruby><rb>仮名</rb><rt>がな</rt></ruby></strong>처럼 <strong class="strong">요미가나</strong>를 달아 놓을 테니 그걸 읽으시면 되요. 자, 그럼 천천히 시작해 볼까요?<br>일본어의 문법은 한국어와 매우 비슷합니다. 한국어 처럼 주어-목적어-동사 어순이예요. 그래서 그냥 한국어 문장을 그대로 일본어로 바꿔서 표현하기만 하면 된답니다. 예를 들어 볼까요? <br> <strong style="color:#558BCF">나는 일본어 학교에 갑니다.</strong>→<strong style="color:#e86b79">わたしは/にほんごがっこうに/いきます</strong><br>여기서 わたし=나, ~は=~는, にほんご=일본어, がっこう=학교, ~に=~에, いきます=갑니다 처럼 일본어와 한국어의 어순이 같은 것을 확인 할 수 있습니다. 그런점에서 일본어 문법은 한국어 구사자에게는 비교적 쉬운 외국어중 하나일거예요!</p>
+	  	<h3 id="JAgranB"><a class="tilelinks" href="#JAgranBRE">~입니다/~합니다</a></h3>
+			<p>우선 정말 기초적인 문법 부터 배워볼께요. 일본어에서는 "~합니다"를 <strong class="strong">"~ます"</strong>라고 하고, "~입니다"를 <strong class="strong">"~です"</strong>라고 합니다. 한국어랑 똑같이 사용해 주면 돼요.<br><strong class="strong">りんごです。</strong><small>사과입니다.</small><br><strong class="strong">おいしいです。</strong><small>맛있습니다.</small><br><strong class="strong">いただきます。</strong><small>잘먹겠습니다. (직역: 받겠습니다)</small><br>반말로 쓸때는 ~です대신 <strong class="strong">"~だ"</strong>라고 하면 됩니다. 동사의 경우는 아래서 배울 동사의 기본형을 그대로 쓰면 됩니다.<br>부정 할때는 ~です대신 <strong class="strong">"~ではありません"</strong>으로, ~だ대신 <strong class="strong">"~ではない"</strong>라고 하면 됩니다. ~では를 줄여서 <strong class="strong">"~じゃ"</strong>라고 하기도 합니다.<br>과거형은 ~です대신 <strong class="strong">"~でした"</strong>을, ~だ대신 <strong class="strong">"~だった"</strong>를 씁니다. 지금은 그냥 그렇구나 하고 넘겨두세요. 동사 변화를 공부하고 나면 이해가 쉬워질 꺼예요.</p>
+		<!--일본어 조-->
+		<h3 id="JAgranPostpo"><a class="tilelinks" href="#JAgranPostpoRE">일본어 조사</a></h3>
+		<!--일본어 동사-->
+		<h3 id="JAgranVerb"><a class="tilelinks" href="#JAgranVerbRE">일본어 동사</a></h3>
+			<p>일본어의 동사는 모두 <strong class="strong">う단</strong>으로 끝납니다. 예를 들어 <strong class="strong">買う</strong><small>(사다)</small>, <strong class="strong">ある</strong><small>(있다)</small> 처럼요. <br>자, 그러면 일본어도 동사 활용이 있겠죠? 일본어의 동사는 마지막 <strong class="strong">-う단</strong> 부분이 あ、い、う、え、お단으로 변화합니다. 우선 아래 표를 한번 보고 이야기 해 봅시다. <br>예시 동사는 <strong class="strong"><ruby><rb>買</rb><rt>か</rt></ruby>う</strong><small>(사다)</small>와 <strong class="strong"><ruby><rb>学</rb><rt>まな</rt></ruby>ぶ</strong><small>(공부하다.)</small>입니다.</p>
+			<table>
+				<tr>
+					<td><small>단</small></td>
+					<td><small>가나</small></td>
+			        <td><small>뜻 (명칭)</small></td>
+					<td><small><ruby><rb>買</rb><rt>か</rt></ruby>う</small></td>
+					<td><small><ruby><rb>学</rb><rt>まな</rt></ruby>ぶ</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>あ단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ない</strong></span></td>
+			        <td><strong class="strong">-하지않는다 (부정형)</strong></td>
+					<td><strong>買<strong class="strong">わ</strong>ない</strong><small>(사지 않는다.)</small></td>
+					<td><strong>学<strong class="strong">ば</strong>ない</strong><small>(공부하지 않는다.)</small></td>
+				</tr>
+			　　<tr>
+					<td class="tableC"><span class="tableT"><strong>い단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ます</strong></span></td>
+			        <td><strong class="strong">-합니다 (ます형)</strong></td>
+		  			<td><strong>買<strong class="strong">い</strong>ます</strong><small>(삽니다.)</small></td>
+					<td><strong>学<strong class="strong">び</strong>ます</strong><small>(공부합니다.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>う단</strong></span></td>
+					<td style="background: #f5f5f5"></span></td>
+			        <td><strong class="strong">-한다 (기본형)</strong></td>
+		  			<td><strong>買<strong class="strong">う</strong></strong><small>(산다.)</small></td>
+	  				<td><strong>学<strong class="strong">ぶ</strong></strong><small>(공부한다.)</small></td>
+				</tr>
+	  			<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"></span></td>
+			        <td><strong class="strong">-해 (명령형)</strong></td>
+					<td><strong>買<strong class="strong">え</strong></strong><small>(사.)</small></td>
+					<td><strong>学<strong class="strong">べ</strong></strong><small>(공부해.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-る</strong></span></td>
+			        <td><strong class="strong">-할 수 있다 (가능형)</strong></td>
+					<td><strong>買<strong class="strong">える</strong></strong><small>(살 수 있다.)</small></td>
+					<td><strong>学<strong class="strong">べる</strong></strong><small>(공부할 수 있다.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ば</strong></span></td>
+			        <td><strong class="strong">-하면 (가정형)</strong></td>
+					<td><strong>買<strong class="strong">えば</strong></strong><small>(사면,)</small></td>
+					<td><strong>学<strong class="strong">べば</strong></strong><small>(공부하면,)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>お단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-う</strong></span></td>
+			        <td><strong class="strong">-하자 (청유형)</strong></td>
+					<td><strong>買<strong class="strong">おう</strong></strong><small>(사자.)</small></td>
+　　　　　　			<td><strong>学<strong class="strong">ぼう</strong></strong><small>(공부하자.)</small></td>
+				</tr>
+			</table>
+			<small>동사의 5단변화</small>
+			<p>일본어 동사는 일반적으로 위에서 보이는 것처럼 변화합니다. 주의해야할 점은 마지막이 -う로 끝나면, -하지 않는다로 변화할때 -あ가 아닌 <strong class="strong">-わ</strong>으로 변화합니다.<br> 단, 일본어에도 예외가 있습니다. -い단+る인 경우나 -え단+る인 경우는 아래처럼 변화합니다. 위 표에서 -え단+る로 끝나는 가능형역시 아래와 같이 변화합니다. 특징은 위의 5단변화는 달리 뒤에서 -る만 빼고 뒤에 -ない, -ます등을 붙니다. 예시 동사는 <strong class="strong"><ruby><rb>生</rb><rt>い</rt></ruby>きる</strong><small>(살다)</small>와 <strong class="strong"><ruby><rb>育</rb><rt>そだ</rt></ruby>てる</strong><small>(키우다)</small>입니다.</p>
+			<table>
+				<tr>
+					<td><small>단</small></td>
+					<td><small>가나</small></td>
+			        <td><small>뜻 (명칭)</small></td>
+					<td><small><ruby><rb>生</rb><rt>い</rt></ruby>きる</small></td>
+					<td><small><ruby><rb>育</rb><rt>そだ</rt></ruby>てる</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>あ단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ない</strong></span></td>
+			        <td><strong class="strong">-하지않는다 (부정형)</strong></td>
+					<td><strong><strong class="strong">生き</strong>ない</strong><small>(살지 않는다.)</small></td>
+					<td><strong><strong class="strong">育て</strong>ない</strong><small>(키우지 않는다.)</small></td>
+				</tr>
+			　　<tr>
+					<td class="tableC"><span class="tableT"><strong>い단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ます</strong></span></td>
+			        <td><strong class="strong">-합니다 (ます형)</strong></td>
+		  			<td><strong><strong class="strong">生き</strong>ます</strong><small>(삽니다.)</small></td>
+					<td><strong><strong class="strong">育て</strong>ます</strong><small>(키웁니다.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>う단</strong></span></td>
+					<td style="background: #f5f5f5"></span></td>
+			        <td><strong class="strong">-한다 (기본형)</strong></td>
+		  			<td><strong><strong class="strong">生き</strong>る</strong><small>(산다.)</small></td>
+	  				<td><strong><strong class="strong">育て</strong>る</strong><small>(키운다.)</small></td>
+				</tr>
+	  			<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"></span></td>
+			        <td><strong class="strong">-해 (명령형)</strong></td>
+					<td><strong><strong class="strong">生き</strong>よ</strong><small>(살아.)</small></td>
+					<td><strong><strong class="strong">育て</strong>よ</strong><small>(키워.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-られる</strong></span></td>
+			        <td><strong class="strong">-할 수 있다 (가능형)</strong></td>
+					<td><strong><strong class="strong">生き</strong>られる</strong><small>(살 수 있다.)</small></td>
+					<td><strong><strong class="strong">育て</strong>られる</strong><small>(키울 수 있다.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-れば</strong></span></td>
+			        <td><strong class="strong">-하면 (가정형)</strong></td>
+					<td><strong><strong class="strong">生き</strong>れば</strong><small>(살면,)</small></td>
+					<td><strong><strong class="strong">育て</strong>れば</strong><small>(키우면,)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>お단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-よう</strong></span></td>
+			        <td><strong class="strong">-하자 (청유형)</strong></td>
+					<td><strong><strong class="strong">生き</strong>よう</strong><small>(살자.)</small></td>
+　　　　　　			<td><strong><strong class="strong">育て</strong>よう</strong><small>(키우자.)</small></td>
+				</tr>
+			</table>
+			<small>동사의 1단변화</small>
+			<p>이 외에도 일본어에는 불규칙 동사가 2개있습니다. 바로 <strong class="strong">する</strong><small>(하다)</small>와, <strong class="strong"><ruby><rb>来</rb><rt>く</rt></ruby>る</strong><small>(오다)</small>입니다. 그래도 다행히 두개 뿐 이네요!</p>
+			<table>
+				<tr>
+					<td><small>단</small></td>
+					<td><small>가나</small></td>
+			        <td><small>뜻 (명칭)</small></td>
+					<td><small>する</small></td>
+					<td><small><ruby><rb>来</rb><rt>く</rt></ruby>る</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>あ단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ない</strong></span></td>
+			        <td><strong class="strong">-하지않는다 (부정형)</strong></td>
+					<td><strong><strong class="strong">し</strong>ない</strong><small>(하지 않는다.)</small></td>
+					<td><strong><strong class="strong">こ</strong>ない</strong><small>(오지 않는다.)</small></td>
+				</tr>
+			　　<tr>
+					<td class="tableC"><span class="tableT"><strong>い단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-ます</strong></span></td>
+			        <td><strong class="strong">-합니다 (ます형)</strong></td>
+		  			<td><strong><strong class="strong">し</strong>ます</strong><small>(합니다.)</small></td>
+					<td><strong><strong class="strong">き</strong>ます</strong><small>(옵니다.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>う단</strong></span></td>
+					<td style="background: #f5f5f5"></span></td>
+			        <td><strong class="strong">-한다 (기본형)</strong></td>
+		  			<td><strong><strong class="strong">す</strong>る</strong><small>(한다.)</small></td>
+	  				<td><strong><strong class="strong">く</strong>る</strong><small>(온다.)</small></td>
+				</tr>
+	  			<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"></span></td>
+			        <td><strong class="strong">-해 (명령형)</strong></td>
+					<td><strong><strong class="strong">しろ / せよ</strong></strong><small>(해.)</small></td>
+					<td><strong><strong class="strong">こい</strong></strong><small>(와.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-られる</strong></span></td>
+			        <td><strong class="strong">-할 수 있다 (가능형)</strong></td>
+					<td><strong><strong class="strong">できる</strong></strong><small>(할 수 있다.)</small></td>
+					<td><strong><strong class="strong">こ</strong>られる</strong><small>(올 수 있다.)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>え단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-れば</strong></span></td>
+			        <td><strong class="strong">-하면 (가정형)</strong></td>
+					<td><strong><strong class="strong">す</strong>れば</strong><small>(하면,)</small></td>
+					<td><strong><strong class="strong">く</strong>れば</strong><small>(오면,)</small></td>
+				</tr>
+				<tr>
+					<td class="tableC"><span class="tableT"><strong>お단</strong></span></td>
+					<td style="background: #f5f5f5"><strong class="strong">-よう</strong></span></td>
+			        <td><strong class="strong">-하자 (청유형)</strong></td>
+					<td><strong><strong class="strong">し</strong>よう</strong><small>(하자.)</small></td>
+　　　　　　			<td><strong><strong class="strong">こ</strong>よう</strong><small>(오자.)</small></td>
+				</tr>
+			</table>
 </body>
 </html>
