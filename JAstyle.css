@@ -24,6 +24,10 @@ h3 {
   font-family: 'M PLUS 1p', 'Song Myung', serif;
   font-size: 18pt;
 }
+h4 {
+  font-family: 'M PLUS 1p', 'Song Myung', serif;
+  font-size: 16pt;
+}
 .tilelinks {
   color:#8A3A39;
 }
@@ -35,7 +39,6 @@ small {
   font-weight: bold;
 }
 .tables {
-  width: 900px;
   border-width: thin;
   margin-right: 30px;
 }

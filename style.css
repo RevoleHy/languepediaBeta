@@ -37,6 +37,9 @@ a {
 #text{
   padding-left: 25px;
   border-left: 2px solid #504e48;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
 }
 #list {
   width: 220px;
