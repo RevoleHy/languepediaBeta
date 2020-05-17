@@ -1,0 +1,57 @@
+h2 {
+  font-family: 'M PLUS 1p', 'Song Myung', serif;
+  color: white;
+  background-color: #8A3A39;
+  font-size: 18pt;
+}
+a {
+  color: #e86b79;
+}
+.tableC {
+  background-color: #e86b79;
+}
+.tableW {
+  background-color: #f5f5f5;
+}
+.strong {
+  color: #e86b79;
+}
+.tableT {
+  color:white;
+  text-align: center;
+}
+h3 {
+  font-family: 'M PLUS 1p', 'Song Myung', serif;
+  font-size: 18pt;
+}
+.tilelinks {
+  color:#8A3A39;
+}
+.titles {
+  color: white;
+}
+small {
+  color:#504e48;
+  font-weight: bold;
+}
+.tables {
+  width: 900px;
+  border-width: thin;
+  margin-right: 30px;
+}
+.kanji {
+  font-size: 32pt;
+}
+.kanjiKO {
+  color: #de7c6b;
+}
+.kanjiON {
+  color: #70b3dc;
+}
+.kanjiSP {
+  color: #bf94e4;
+}
+.tableKanji {
+  background-color: #e86b79;
+  width: 70px;
+}
