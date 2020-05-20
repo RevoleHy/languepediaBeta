@@ -1,0 +1,20 @@
+body {
+    background: #353839;
+    color: white;
+  }
+#darknight {
+    background: #f5f5f5;
+    color: #343434;
+  }
+#subtitle, h1, small {
+    color : #f5f5f5;
+  }
+.strongfr, h3 {
+    color : powderblue;
+  }
+.titlelinks {
+    color: #e86b79;
+  }
+.tableW {
+    color: #343434;
+  }
