@@ -1,6 +1,23 @@
-function makeCookie(value) {
-  $.cookie('dmCookie', value);
+function isDarkMode() {
+  return Cookies.get('darkmode');
 }
+Cookies.set('darkmode', 'Dark');
+
+function getCookie(c_name)
+{
+	var i,x,y,ARRcookies=document.cookie.split(";");
+	for (i=0;i<ARRcookies.length;i++)
+	{
+	  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+	  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+	  x=x.replace(/^\s+|\s+$/g,"");
+	  if (x==c_name)
+		{
+		return unescape(y);
+		}
+	  }
+}
+// 출처: https://csslab.tistory.com/51 [learning DEV :D ]
 
 var ID = {
   setColor:function(selector, c) {
@@ -45,6 +62,7 @@ var Button = {
 
 function darklight(self) {
   if(self.value === 'Dark'){
+    Cookies.set('darkmode', 'Light');
     Body.setColor('white');
     Body.setBackgroundColor('#353839');//body 컬러 변경
     Button.setBackgroundColor('#f5f5f5');
@@ -56,8 +74,8 @@ function darklight(self) {
     Strong.setColor('small', '#f5f5f5');
     Table.setColor();
     $('#darknight').val('Light');
-    makeCookie('Light');
   } else {
+    Cookies.set('darkmode', 'Dark');
     Body.setColor('black');
     Body.setBackgroundColor('white');//body 컬러 변경
     Button.setBackgroundColor('#353839');
@@ -75,5 +93,5 @@ function darklight(self) {
 }
 
 function DM() {
-  document.write('<input id="darknight" type="button" value="Dark" onclick="darklight(this)">');
+  document.write('<input id="darknight" type="button" value="Dark" onclick=" this.value = isDarkMode(); darklight(this); ">');
 }
