@@ -3,38 +3,50 @@
 <head>
   <title>La Languepedia de RevoleHy</title>
   <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link id="dark-mode-sheet" rel="stylesheet" href="style.css" media="(prefers-color-scheme: dark)">
+  <script src="./javascript/dm.js"></script>
+  <script src="dmV2.js"></script>
+  <script src="./javascript/lists.js"></script>
 </head>
 <body>
   <div id="titlelang">
-    <span id="languepedia"><a href="index.html">Languepedia</a></span>
+    <span id="languepedia"><a href="index.html">Languepedia</a></span><h4 id="subTitle">MAIN</h4>
   </div>
   <h1>WECOME TO LANGUEPEDIA <br> BIENVENUE À LANGUEPEDIA <br> LANGUEPEDIA에 오신걸 환영합니다 </h1>
   <div id="grid">
     <div id="list">
+      <input type="button" value="Dark" onclick="dmC (this)">
       <ul>
-        <h4>언어별 정보</h4>
-        <li><a href="02KR.html" style="color:#558BCF">한국어</a></li>
-        <li><a href="03JA.html" style="color:#DE7C68">にほんご</a></li>
-        <li><a href="01FR.html" style="color:#0055A4">le français</a></li>
-        <li><a href="04RU.html" style="color:#FC80A5">Русский</a></li>
-        <li><a href="05ZH.html" style="color:#99001C">漢語(준비중/NOT Ready)</a></li>
+        <h4>언어별 정보 - Info Langue</h4>
+        <script>
+          LOL.langIndex();
+        </script>
       </ul>
       <ul>
-        <h4>표현별 정보</h4>
-        <li class="libyli"><a href="OthsMONTH.html">달(月) 표현 - Months</a></li>
-        <li class="libyli"><a href="OthsDAYS.html">요일(曜日) 표현 - Days</a></li>
-        <li class="libyli"><a href="OthsDIREC.html">방향(方向) 표현 - Directions</a></li>
+        <h4>언어에 관한 기본정보 - Basic Info Langue</h4>
+        <script>
+          listMaker(['자음과 모음 - Consonans et Vocalis', 'IPA 발음 기호'], ['ConEtVoc', 'IPA']);
+        </script>
+      </ul>
+      <ul>
+        <h4>표현별 정보 - Info Expression</h4>
+        <script>
+          listMaker(['달(月) 표현 - Months', '요일(曜日) 표현 - Days', '방향(方向) 표현 - Directions'], ['OthsMONTH', 'OthsDAYS', 'OthsDIREC']);
+        </script>
       </ul>
       <br>
     </div>
     <div id="text">
       <h2>Languepedia? 도대체 뭐하는 거죠? (KR)</h2>
       <p>Languepedia는 RevoleHy라는 이름의 한 친구가 만들고 있는 언어사전이예요-!^^. 모든 언어에 대한 정보를 정리하는 것이 저희의 목표랍니다-★<br>[ ]안은 발음, ( )안은 뜻 이예요. 발음은 정확하지 않을 수 있으니 다른 자료들을 참고해 주세요-★</p>
+      <h3><a href="indexKR.html">한국어 전용 LANGUEPEDIA 가기</a></h3>
       <h2>What is Languepedia? (EN)</h2>
       <p>Languepedia is a dictionarry about langues in whole worlds which is made by RevoleHy. We are going to make documents about all langues.</p>
-      <h2>RevoleHy</h2>
-      <p>Bonjour, everyone! I want to communicate with whole people in this world in their langages. It would be very difficult and hard challange. Will you go with ME?</p>
+      <h2>공지 Notice お知らせ Avis public</h2>
+      <p>메인 페이지의 언어는 한국어 및 영어입니다. 저희는 한국어나 영어를 구사하지 못하는 사람들을 포함한 모든 사람들이 이 페이지를 열람 할 수 있도록 하고 싶습니다. 하지만, 그렇게 되는 것은 시간이 조금 걸리기에, 방문자 여러분들의 양해를 구합니다. 방문해 주셔서 고맙습니다.</p>
+      <p>Main page's basic Langue is English and Korean. I'm trying to make this page all people (included who can't read English or Korean) to can read. But it takes times so please understand me and thank you for visit our page.</p>
       <br>
     </div>
   </div>

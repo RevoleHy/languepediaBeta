@@ -2,6 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #353839;
+    color: white;
+  }
+  #darknight {
+    background: #f5f5f5;
+    color: #343434;
+  }
+  #subtitle, h1, small {
+    color : #f5f5f5;
+  }
+  .strongfr, h3 {
+    color : powderblue;
+  }
+  .titlelinks {
+    color: #e86b79;
+  }
+  .tableW {
+    color: #343434;
+  }
+}
+
 body {
   font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
   margin: 0;
@@ -16,6 +40,10 @@ h1 {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: #5B92E4;
+}
+li {
+  list-style: none;
 }
 #languepedia {
   background: linear-gradient(to right, #FC80A5, #558BCF);
@@ -24,10 +52,15 @@ a {
   font-size: 40pt;
   font-weight: bold;
 }
+#subTitle {
+	font-size: 18px;
+	font-family: 'Cabin', 'M PLUS 1p', sans-serif;
+	margin-top: 10px;
+	color : #353839;
+}
 #titlelang {
   text-align: center;
   border-bottom: 2px solid #504e48;
-  padding-bottom: 20px;
   padding-top: 30px;
 }
 #grid {
@@ -66,4 +99,20 @@ a {
   #grid {
     display: inherit;
   }
+}
+input {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 40px;
+  width: 60px;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #353839;
+  color: #f5f5f5;
+}
+#darknight {
+  background-color: 353839;
+  color: #f5f5f5;
+  margin-top: 20px;
 }
