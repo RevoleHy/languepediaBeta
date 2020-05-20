@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <title>La Languepedia de RevoleHy</title>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="./javascript/dm.js"></script>
+  <script src="./javascript/lists.js"></script>
+</head>
+<body>
+  <div id="titlelang">
+    <span id="languepedia"><a href="index.html">Languepedia</a></span><h4 id="subTitle">한국어</h4>
+  </div>
+  <h1>LANGUEPEDIA에 오신걸 환영합니다 </h1>
+  <div id="grid">
+    <div id="list">
+      <script>DM();</script>
+      <ul>
+        <h4>언어별 정보</h4>
+        <script>
+          LOL.langIndexKR();
+        </script>
+      </ul>
+      <ul>
+        <h4>언어에 관한 기본정보</h4>
+        <script>
+          listMaker(['자음과 모음', 'IPA 발음 기호'], ['ConEtVoc', 'IPA']);
+        </script>
+      </ul>
+      <ul>
+        <h4>표현별 정보</h4>
+        <script>
+          listMaker(['달(月) 표현', '요일(曜日) 표현', '방향(方向) 표현'], ['OthsMONTH', 'OthsDAYS', 'OthsDIREC']);
+        </script>
+      </ul>
+      <br>
+    </div>
+    <div id="text">
+      <h2>Languepedia? 도대체 뭐하는 거죠? (KR)</h2>
+      <p>Languepedia는 RevoleHy라는 이름의 한 친구가 만들고 있는 언어사전이예요-!^^. 모든 언어에 대한 정보를 정리하는 것이 저희의 목표랍니다-★<br>[ ]안은 발음, ( )안은 뜻 이예요. 발음은 정확하지 않을 수 있으니 다른 자료들을 참고해 주세요-★</p>
+      <h3><a href="index.html">메인 LANGUEPEDIA 가기</a></h3>
+      <br>
+    </div>
+  </div>
+</body>
+</html>

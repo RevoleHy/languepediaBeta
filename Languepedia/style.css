@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+  font-family: 'Cabin', 'M PLUS 1p', 'Noto Sans KR', sans-serif;
+  margin: 0;
+}
+h1 {
+  color:#5B92E4;
+  text-align: center;
+  border-bottom: 2px solid #504e48;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5B92E4;
+}
+li {
+  list-style: none;
+}
+#languepedia {
+  background: linear-gradient(to right, #FC80A5, #558BCF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40pt;
+  font-weight: bold;
+}
+#subTitle {
+	font-size: 18px;
+	font-family: 'Cabin', 'M PLUS 1p', sans-serif;
+	margin-top: 10px;
+	color : #353839;
+}
+#titlelang {
+  text-align: center;
+  border-bottom: 2px solid #504e48;
+  padding-top: 30px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+#text{
+  padding-left: 25px;
+  border-left: 2px solid #504e48;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+}
+#list {
+  width: 220px;
+  margin: 0;
+  padding-top: 20px;
+}
+.libyli {
+  background: linear-gradient(to right, #FC80A5, #558BCF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media(max-width:1000px) {
+  #text {
+    border-left: none;
+  }
+  h1 {
+    border-bottom: none;
+    font-size: 28px;
+  }
+  #languepedia {
+    border-bottom: 40pt;
+    font-size: 40pt;
+  }
+  #grid {
+    display: inherit;
+  }
+}
+input {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 40px;
+  width: 60px;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #353839;
+  color: #f5f5f5;
+}
+#darknight {
+  background-color: 353839;
+  color: #f5f5f5;
+  margin-top: 20px;
+}
